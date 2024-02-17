@@ -1,0 +1,68 @@
+:root {
+  --bg-light-theme: #fff;
+  --bg-dark-theme: #000;
+  --text-light-theme: #fff;
+  --text-dark-theme: #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body-light {
+  height: 100vh;
+  width: 100vw;
+  color: var(--bg-light-theme);
+  transition: background-color 0.5s, color 0.5s;
+}
+.body-dark {
+  background-color: var(--bg-dark-theme);
+  color: var(--text-dark-theme);
+}
+
+.header-light, .header-dark {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: .1rem solid var(--bg-dark-theme);
+  padding: 1rem;
+}
+.header-dark {
+  border-bottom: .1rem solid var(--bg-light-theme);
+}
+
+.h1-light {
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  color: var(--text-dark-theme);
+}
+.h1-dark {
+  color: var(--bg-light-theme);
+}
+
+.link-light, .link-dark {
+  text-decoration: none;
+  color: var(--text-dark-theme);
+  padding: 1rem;
+}
+.link-dark {
+  color: var(--bg-light-theme);
+}
+
+.button-light, .button-dark {
+  cursor: pointer;
+  background-color: var(--bg-dark-theme);
+  color: var(--text-light-theme);
+  border: none;
+  border-radius: .4rem;
+  padding: .5rem 1rem;
+}
+.button-dark {
+  background-color: var(--bg-light-theme) !important;
+  color: var(--text-dark-theme);
+}
